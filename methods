@@ -1,0 +1,7 @@
+def us_window_open?
+	puts "no"
+end
+
+def what_is_my_age
+	puts "35"
+end

@@ -1,0 +1,8 @@
+class Airplane < ActiveRecord::Base
+  # attr_accessible :title, :body
+  has_one :pilot
+  belongs_to :hangar
+  
+  has_many :trips
+  has_many :passengers, :through => :trips
+end

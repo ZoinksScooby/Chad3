@@ -1,0 +1,19 @@
+CANDY model
+  has
+    -name (validate uniqueness)
+    -time_purchased_at (validate is in the past)
+    -store_purchased_at (validate is one of:
+        duane reade,
+        walgreens,
+        rite aid
+    )
+
+make a CANDIES controller
+  -show action (HTML-formatted sentence about first candy)
+  -index action (HTML-formatted sentence about all candies)
+  -delete_all action (deletes all Candies from database)
+
+(all accessible via logical routes)
+
+
+you CAN and should use date_validator

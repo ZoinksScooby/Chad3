@@ -1,0 +1,16 @@
+BELONGS_TO is implied here, you know!?
+
+Hangar
+  -has many airplanes
+
+Airplane
+  -has one pilot
+
+Airline
+  -has many hangars
+
+Passenger
+  -have many airplanes, through trips
+
+POPULATE VIA CONSOLE
+

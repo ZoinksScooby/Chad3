@@ -1,0 +1,10 @@
+Make a MENU!
+
+the menu has dishes.
+each dish has 1 or more DishPhotos.
+can upload photos, can view photos.
+validate that each upload is less than 10mB
+obfuscate the URI (consult documentation)
+validate presence of all attachments where rational
+resize the photos to look pretty; display resized photo
+

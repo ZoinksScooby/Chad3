@@ -1,0 +1,13 @@
+require './triangles.rb'
+require './triangle_math.rb'
+
+TRIANGLES.each do |triangle|
+  area = area triangle
+  puts "'#{color triangle}' triangle has an area of #{area}"
+end
+
+TRIANGLES.each do |triangle|
+  area = hypotenuse triangle
+  puts "'#{color triangle}' triangle has an area of #{hypotenuse}"
+end
+ 

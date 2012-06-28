@@ -1,0 +1,17 @@
+Ex: make a fruits table, and a Fruit model
+
+has a color
+has a quanity
+does it have a stem? (true/false)
+has a price
+has a date purchased
+
+Ex2: make a shirts table, and a Shirt model
+
+has a color
+has a size
+has graphic
+purchased_on
+
+STEP2: make 2-3 rows/instances of Shirt/shirts
+

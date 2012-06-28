@@ -1,0 +1,23 @@
+class State < ActiveRecord::Base
+  attr_accessible :name, :capitol
+
+  validates_presence_of :name
+  validates_uniqueness_of :name
+  
+  before_filter :authenticate_user!
+  before_validation :favorite
+  
+  protected
+  
+  def favorite
+    if self.name == 'New York'
+      self.simply_the_best = true
+    else
+      self.simply_the_best = false
+    end
+    
+    return nil
+  end
+
+end
+

@@ -1,0 +1,12 @@
+students:
+  id
+  name
+
+classes:
+  id
+  name
+
+enrollments:
+  student_id
+  class_id
+

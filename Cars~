@@ -1,0 +1,37 @@
+class Car
+  def initialize(model, make, year, x, y)
+    @model = model
+    @make = make
+    @year = year
+  end
+  
+  def accellerator (speed, time)
+    @speed = speed
+    @time = time
+  end
+
+  def turn(degrees)
+    @orientation += degrees
+  end
+  
+  def location
+    p x_coordinate
+    p y_coordinate
+  end
+  
+#protected
+
+  def distance
+    distance = @speed * @time
+  end
+  
+  def x_direction
+  end
+
+  def y_direction
+  end
+
+end
+
+vette = Car.new
+

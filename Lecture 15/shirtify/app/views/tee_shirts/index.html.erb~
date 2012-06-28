@@ -1,0 +1,24 @@
+<h1>Listing tee_shirts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tee_shirts.each do |tee_shirt| %>
+  <tr>
+    <td><%= tee_shirt.tee_shirt_photos.first.file.url :thumbnail %></td>
+    <td><%= tee_shirt.name %></td>
+    <td><%= link_to 'Show', tee_shirt %></td>
+    <td><%= link_to 'Edit', edit_tee_shirt_path(tee_shirt) %></td>
+    <td><%= link_to 'Destroy', tee_shirt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tee shirt', new_tee_shirt_path %>

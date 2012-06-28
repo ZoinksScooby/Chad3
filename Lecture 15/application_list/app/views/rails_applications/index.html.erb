@@ -1,0 +1,25 @@
+<h1>Listing rails_applications</h1>
+
+<% session.each do |k,v| %>
+  <%= k %>, <%= v %> <br />
+<% end %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rails_applications.each do |rails_application| %>
+  <tr>
+    <td><%= link_to image_tag(rails_application.photo.url(:thumbnail)), rails_application %></td>
+    <td><%= link_to 'Destroy', rails_application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rails application', new_rails_application_path %>

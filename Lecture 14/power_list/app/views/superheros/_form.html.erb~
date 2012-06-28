@@ -1,0 +1,29 @@
+<%= form_for(@superhero) do |f| %>
+  <% if @superhero.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@superhero.errors.count, "error") %> prohibited this superhero from being saved:</h2>
+
+      <ul>
+      <% @superhero.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name, f.object.class %><br />
+    <%= f.text_field :name %>
+  </div>
+  
+  <%= f.fields_for :powers do %>
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </div>
+  <% end %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

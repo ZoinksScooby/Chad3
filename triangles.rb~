@@ -1,0 +1,11 @@
+TRIANGLES = [
+  { :color => 'green',
+    :side_1_length => 30.0,
+    :side_2_length => 14.0 },
+  { :color => 'pink',
+    :side_1_length => 6.0,
+    :side_2_length => 10000.0 }
+  { :color => 'chartruse',
+    :side_1_length => 6.0,
+    :side_2_length => 10000.0 }
+]

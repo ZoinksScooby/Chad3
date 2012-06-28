@@ -1,0 +1,33 @@
+
+def determine_rights(age)
+  if age >= 21
+    puts "You can drink booze (and vote and drive)!"
+    elsif age >= 18
+      puts "You can vote ... and drive!"
+    elsif age >= 16
+      puts "You can drive!"
+    else
+      puts "Go cry on your mommy!"
+  end
+end
+
+age = 14
+puts age
+determine_rights(age)
+
+age = 18
+puts age
+determine_rights(age)
+
+age = 19
+puts age
+determine_rights(age)
+
+age = 21
+puts age
+determine_rights(age)
+
+age = 22
+puts age
+determine_rights(age)
+

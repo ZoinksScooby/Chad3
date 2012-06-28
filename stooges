@@ -1,0 +1,9 @@
+stooges = []
+
+stooges << "larry"
+
+stooges << "curly"
+
+stooges << "moe"
+
+stooges << "shemp"

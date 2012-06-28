@@ -1,0 +1,6 @@
+controller
+  1-receives a web request
+  2-does something with it
+  3-returns something to the user's browser, like HTML
+    or text
+

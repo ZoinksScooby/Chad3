@@ -1,0 +1,21 @@
+create a Flower model
+  has 
+    number of petals
+    petal color
+    stem color
+    number of leaves
+    species
+    born_on
+  
+  validations
+    must have all fields, except number of leaves
+    species must be unique
+    
+    petal color can only be white,red,blue,pink,yellow
+    number of leaves, if present, must be non-negative
+
+...and create a few!
+
+BONUS: born_on date must be at least one week in the past
+SUPER-BONUS: number of petals must be fibonacci number 
+

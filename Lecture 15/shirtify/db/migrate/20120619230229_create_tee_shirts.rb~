@@ -1,0 +1,9 @@
+class CreateTeeShirts < ActiveRecord::Migration
+  def change
+    create_table :tee_shirts do |t|
+      t.string :name
+    end
+    
+    add_attachment :tee_shirts, :photo
+  end
+end

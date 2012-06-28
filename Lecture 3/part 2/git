@@ -1,0 +1,8 @@
+git:
+
+init
+add {path}
+commit -m "message"
+diff
+log
+

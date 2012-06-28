@@ -1,0 +1,25 @@
+Ex:
+
+Candy
+-color (red, blue, or nil)
+-name (starburst, gum)
+-created_at
+-rating (1, 2, 3)
+
+**Make 100 candies
+
+FIND with an index controller and display (no pagination):
+
+the first 13 candies who have a rating of 2 or higher, are named starburst, and are red or blue, sorted by highest to lowest rating.
+
+
+
+
+
+
+
+
+
+
+
+

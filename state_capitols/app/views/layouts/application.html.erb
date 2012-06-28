@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StateCapitols</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div>
+    Buy now for <%= to_dollars(ApplicationController::PRICE) %>!!
+  </div>
+  
+  <div>
+    <%= shortenify ApplicationController::NICE_BUT_LONG_SAYING %>
+  </div>
+
+  <%= yield %>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+</body>
+</html>

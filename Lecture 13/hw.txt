@@ -1,0 +1,16 @@
+Ex: Create a new Rails app with two dummy
+controller actions
+
+Install devise
+
+One controller action is visible when logged out, other action is only visible when logged in
+
+add a field called 'age' and 'birthday' to User model
+-birthday may be attr_accessible, but not age
+
+make it so that when a new User is created, a birthday is supplied, and then the age in years is automatically inserted
+
+validates_presence_of :age, :birthday
+
+Add Lockout functionality to devise so that a user is locked out after three bad password attempts (Devise::Models::Lockable)
+

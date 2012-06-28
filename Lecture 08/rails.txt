@@ -1,0 +1,18 @@
+Ruby on Rails
+Rails is used for database-backed web applications.
+
+Most of the code is boilerplate (which a framework handles).
+
+4 parts to a Rails application:
+-Models
+--CRUD
+--Validation
+--Assocations
+-Routes
+--"for this URL, do this thing"
+-Controllers
+--1) Tell the models to CRUD some data
+--2) Tell Rails what to show the user
+-Views
+--Displayed to the user
+

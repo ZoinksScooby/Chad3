@@ -1,0 +1,7 @@
+create a class called Product
+should have price per unit, quantity
+make methods for
+  total value of goods
+  sales tax on total value of goods
+  BONUS: sales tax on N quanity of goods
+

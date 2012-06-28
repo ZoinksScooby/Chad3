@@ -1,0 +1,9 @@
+make a new rails app called clockr
+
+make a controller called TimesController
+
+make an action for this controller called show, which prints the current time to the web browser, as part of some nice sort of sentence.
+
+make this action be executed when a user navigates to 
+/give-me-the-time
+

@@ -1,0 +1,6 @@
+candies = {
+  :Miles => "Old Fashioned",
+  :chupa => "cabra"
+}
+
+puts candies

@@ -1,0 +1,13 @@
+#fruits table and model (color, quantity, stemBool, price, date purchased)
+
+class CreateFruits < ActiveRecord::Migration
+  def change
+    create_table :fruits do |t|
+      t.string :color
+      t.integer :quantity
+      t.boolean :stem
+      t.float :integer
+      t.date :date
+    end
+  end
+end

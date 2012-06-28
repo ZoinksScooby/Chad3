@@ -1,0 +1,86 @@
+class TeeShirtsController < ApplicationController
+  # GET /tee_shirts
+  # GET /tee_shirts.json
+  def index
+    @tee_shirts = TeeShirt.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @tee_shirts }
+    end
+  end
+
+  # GET /tee_shirts/1
+  # GET /tee_shirts/1.json
+  def show
+    @tee_shirt = TeeShirt.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @tee_shirt }
+    end
+  end
+
+  # GET /tee_shirts/new
+  # GET /tee_shirts/new.json
+  def new
+    @tee_shirt = TeeShirt.new
+    
+    @tee_shirt.tee_shirt_photos.build
+    @tee_shirt.tee_shirt_photos.build
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @tee_shirt }
+    end
+  end
+
+  # GET /tee_shirts/1/edit
+  def edit
+    @tee_shirt = TeeShirt.find(params[:id])
+  end
+
+  # POST /tee_shirts
+  # POST /tee_shirts.json
+  def create
+    @tee_shirt = TeeShirt.new(params[:tee_shirt])
+
+    respond_to do |format|
+      if @tee_shirt.save
+        format.html { redirect_to @tee_shirt, notice: 'Tee shirt was successfully created.' }
+        format.json { render json: @tee_shirt, status: :created, location: @tee_shirt }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @tee_shirt.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /tee_shirts/1
+  # PUT /tee_shirts/1.json
+  def update
+    @tee_shirt = TeeShirt.find(params[:id])
+
+    respond_to do |format|
+      if @tee_shirt.update_attributes(params[:tee_shirt])
+        format.html { redirect_to @tee_shirt, notice: 'Tee shirt was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @tee_shirt.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /tee_shirts/1
+  # DELETE /tee_shirts/1.json
+  def destroy
+    @tee_shirt = TeeShirt.find(params[:id])
+    @tee_shirt.destroy
+
+    respond_to do |format|
+      format.html { redirect_to tee_shirts_url }
+      format.json { head :no_content }
+    end
+  end
+end

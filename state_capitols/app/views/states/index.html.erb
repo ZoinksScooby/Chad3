@@ -1,0 +1,19 @@
+<h1>Listing <%= State.count %> states</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @states.each do |view_state| %>
+  <%= render( :partial => 'name_with_link', 
+              :locals => { :partial_state => view_state }) %>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Register another state', new_state_path %>

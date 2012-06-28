@@ -1,0 +1,10 @@
+create a Hangar class
+
+class Hangar
+
+def add_airplane(airplane)
+  raise ArgumentError unless airplane.is_a? Airplane
+  @ airplane << airplane
+end
+
+end

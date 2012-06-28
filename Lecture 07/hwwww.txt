@@ -1,0 +1,19 @@
+Ex: Parse a very interesting time using Chronic, as weird as you can get. Display it to the screen.
+
+Ex: Use Bit.ly gem to shorten a URL relating to you. Then, use the "code" part of the url (e.g. "30403" in bit.ly/30403) to return all available information about the short URL.
+
+(You will need to get a bitly API key; should be free.)
+
+Ex: Restaurants!
+
+3 classes:
+Restaurant
+ItalianRestaurant
+ChineseRestaurant
+
+For ALL THREE:
+create at least one of each
+say hello in a meaningful language
+Ask each of your restaurants if they have bread (true/false)
+Ask each of your restaurants if they have noodles (true/false)
+

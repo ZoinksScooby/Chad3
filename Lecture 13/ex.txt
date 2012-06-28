@@ -1,0 +1,6 @@
+EX:
+
+create a boolean field on states/cities called is_the_best
+
+use a callback to save the value of is_the_best to true only if the state is your favorite state/city.
+

@@ -1,0 +1,6 @@
+class ClockrController < ApplicationController
+  def give_me_the_time
+    time = Time.local_time
+    render :text => "#{time}"
+  end
+end

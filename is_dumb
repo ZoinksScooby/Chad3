@@ -1,0 +1,9 @@
+#method called "is_dumb"
+
+friend = "james"
+
+#in one line return the sentence "james is dumb" and all caps
+
+def is_dumb
+  puts "is dumb"
+end

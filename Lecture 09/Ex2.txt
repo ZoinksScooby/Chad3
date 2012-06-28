@@ -1,0 +1,20 @@
+Update the greetings app to use an html view, and layout
+
+====
+
+use the flowers app
+
+make a controller action called "flowers#index"
+    with a route from "/flowers"
+
+use a HTML view, to display the "species" of all flowers in the database
+
+@flowers = Flower.all
+
+SAMPLE OUTPUT
+========
+
+Some flowers: tulips, lilacs
+
+========
+

@@ -1,0 +1,48 @@
+<%= form_for(@rails_application) do |f| %>
+  <% if @rails_application.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rails_application.errors.count, "error") %> prohibited this rails_application from being saved:</h2>
+
+      <ul>
+      <% @rails_application.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name, 'Name (Rails Application)' %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :photo, 'Thumbnail' %><br />
+    <%= f.file_field :photo %>
+  </div>
+  
+  <%= f.fields_for :models do |model| %>
+    <div class="field">
+      <%= model.label :name, 'Name (Model)' %><br />
+      <%= model.text_field :name %>
+    </div>
+  <% end %>
+
+  <%= f.fields_for :controllers do |controller| %>
+    <div class="field">
+      <%= controller.label :name, 'Name (Controller)' %><br />
+      <%= controller.text_field :name %>
+    </div>
+  <% end %>
+  
+  <%= f.fields_for :creator do |creator| %>
+    <div class="field">
+      <%= creator.label :name, 'Name (Creator)' %><br />
+      <%= creator.text_field :name %>
+    </div>
+  <% end %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

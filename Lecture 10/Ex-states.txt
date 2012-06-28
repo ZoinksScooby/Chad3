@@ -1,0 +1,3 @@
+Ex: Make a rails applications which inputs and outputs U.S. state capitols via web forms and html and stuff.
+
+

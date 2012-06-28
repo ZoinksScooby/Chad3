@@ -1,0 +1,8 @@
+Ex: install devise for states_and_cities app
+
+create a user account for yourself and log in
+
+make one of your controller actions PUBLICLY available
+without being logged in
+*** research Rails documentation for before_filter
+

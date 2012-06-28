@@ -1,0 +1,29 @@
+<%= form_for(@tee_shirt) do |f| %>
+  <% if @tee_shirt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tee_shirt.errors.count, "error") %> prohibited this tee_shirt from being saved:</h2>
+
+      <ul>
+      <% @tee_shirt.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <%= f.fields_for :tee_shirt_photos do |photo| %>
+    <div class="field">
+      <%= photo.label :file %><br />
+      <%= photo.file_field :file %>
+    </div>
+  <% end %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

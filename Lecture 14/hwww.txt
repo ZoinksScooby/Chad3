@@ -1,0 +1,20 @@
+rails application which creates and stores Rails applications.
+
+models
+-RailsApplication
+-Model
+-Controller
+-Creator
+(each of the above has a 'name')
+
+RailsApplication
+  -has many Models
+  -has many Controllers
+  -has one Creator
+
+build a form  at RailsApplications#new which accepts names for and creates objects for 
+-one Rails Application, with
+-2 controllers
+-2 models
+-1 creator
+

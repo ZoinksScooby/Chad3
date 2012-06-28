@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tee_shirt.name %>
+</p>
+
+<% @tee_shirt.tee_shirt_photos.each do |photo| %>
+  <p>
+    <b>Photo:</b>
+    <%= image_tag photo.file.url %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_tee_shirt_path(@tee_shirt) %> |
+<%= link_to 'Back', tee_shirts_path %>

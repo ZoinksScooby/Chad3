@@ -1,0 +1,8 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+  
+  PRICE = 10.00
+  
+  NICE_BUT_LONG_SAYING = "Hi thank you very much for using this great and helpful tool!"
+end
+

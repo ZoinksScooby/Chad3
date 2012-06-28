@@ -1,0 +1,3 @@
+class Hangar < ActiveRecord::Base
+  # attr_accessible :title, :body
+end

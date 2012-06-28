@@ -1,0 +1,10 @@
+make a rails app
+
+models
+-Superhero
+-Power
+
+superheroes have many powers, a la "superman can fly"
+
+make a superheroes#new/#create form, which allows a user to create a new superhero with three new powers.
+

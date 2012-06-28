@@ -1,0 +1,142 @@
+#the break is possible, sort of
+#y_coordinate not complete yet
+
+class Car
+  def initialize(model, make, year)
+    @model = model
+    @make = make
+    @year = year
+    @x_coordinate = 0
+    @y_coordinate = 0
+    @orientation = 0
+    @speed = 0
+    @time = 0
+    @distance = 0
+  end
+  
+  def model
+    @model
+  end
+  
+  def speed
+    @speed
+  end
+  
+  def year
+    @year
+  end
+  
+  def time
+    @time
+  end
+  
+  def make
+    @make
+  end
+  
+  def x_coordinate
+    @x_coordinate
+  end
+  
+  def y_coordinate
+    @y_coordinate
+  end
+  
+  def orientation
+    @orientation
+  end
+  
+  def turn_right
+    @orientation += 90
+  end
+
+  def turn_left
+    @orientation -= 90
+  end
+  
+  def accellerator(speed, duration)
+    @speed = speed
+    @time += duration
+    @x_coordinate += ( (speed*duration) )*x_multiplier(@orientation)
+    @y_coordinate += ( (speed*duration) )*y_multiplier(@orientation)
+  end
+  
+  def brake    
+    @speed = 0
+  end
+  
+  def go(duration)
+    @x_coordinate += ( (speed*duration) )*x_multiplier(@orientation)
+    @y_coordinate += ( (speed*duration) )*y_multiplier(@orientation)
+  end
+  
+  def location
+    p 'x'
+    p x_coordinate
+    p 'y'
+    p y_coordinate
+  end
+  
+  def reset
+    @x_coordinate = 0
+    @y_coordinate = 0
+    @time = 0
+  end
+
+protected
+
+  def x_multiplier(degrees)
+    if degrees == 0
+      1
+    elsif degrees == 180
+      -1
+    else
+      0
+    end
+  end
+  
+  def y_multiplier(degrees)
+    if degrees == 90
+      1
+    elsif degrees == 270
+      -1
+    else
+      0
+    end
+  end        
+end
+
+porsche = Car.new('911 Turbo','Porsche', 1998)
+p porsche
+
+p porsche.accellerator(60,1)
+p 'my location is'
+p porsche.location
+p 'my orientation is'
+p porsche.orientation
+
+porsche.turn_right
+p 'i turned right'
+p 'my orientation is'
+p porsche.orientation
+
+porsche.turn_right
+p 'i turned right'
+p 'my orientation is'
+p porsche.orientation
+
+p 'I am accellerating'
+porsche.accellerator (5,9)
+p 'my location is'
+p porsche.location
+
+
+porsche.turn_right
+p 'i turned right'
+p 'my orientation is'
+p porsche.orientation
+
+p 'I am accellerating'
+porsche.accellerator (5,9)
+p 'my location is'
+p porsche.location

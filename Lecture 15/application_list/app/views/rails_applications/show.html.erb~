@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name (Rails Application):</b>
+  <%= @rails_application.name %>
+</p>
+
+<p>
+  <b>Name (Creator):</b>
+  <%= @rails_application.creator.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_rails_application_path(@rails_application) %> |
+<%= link_to 'Back', rails_applications_path %>

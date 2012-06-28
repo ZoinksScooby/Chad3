@@ -1,0 +1,31 @@
+<%= form_for @shirt do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+  </div>
+
+  <div>
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+  </div>
+
+  <div>
+    <%= f.label has_graphic %>
+    <%= f.text_field has_graphic %>
+  </div>
+
+  <div>
+    <%= f.label :purchased_on %>
+    <%= f.text_field :purchased_on %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+
+<% end %>

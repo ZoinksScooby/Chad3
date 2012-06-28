@@ -1,0 +1,21 @@
+<%= form_for @candy do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :time_purchased_at %>
+    <%= f.text_field :time_purchased_at %>
+  </div>
+
+  <div>
+    <%= f.label :store_purchased_at %>
+    <%= f.text_field :store_purchased_at %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+
+<% end %>

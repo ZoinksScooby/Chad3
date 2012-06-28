@@ -1,0 +1,20 @@
+#HTML builds web pages, NOT A PROGRAMMING LANGUAGE
+
+tags: <> <<tag>
+close tags <tag /> <tag
+
+<html>
+  <head>
+  </head>
+
+<body
+  I am a web pagee
+</body>
+
+</html>
+
+<%= 'executes and displays ruby code' %>
+
+<% "can't see me!" %>
+
+

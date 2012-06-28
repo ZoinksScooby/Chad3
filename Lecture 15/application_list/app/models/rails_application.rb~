@@ -1,0 +1,19 @@
+class RailsApplication < ActiveRecord::Base
+  attr_accessible :name,
+                  :models_attributes,
+                  :controllers_attributes,
+                  :creator_attributes
+  
+  has_many :controllers
+  has_many :models
+  has_one  :creator
+  
+  accepts_nested_attributes_for :models,
+                                :controllers,
+                                :creator
+
+  has_attached_file :photo, :styles => {
+    :thumbnail => '50x50'
+  }
+end
+

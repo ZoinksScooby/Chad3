@@ -1,0 +1,6 @@
+class GreetingsController < ApplicationController
+  def show
+    name = "Rob"
+    render :text => "Hello to #{name} from Rails!"
+  end
+end
